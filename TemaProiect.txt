@@ -1,1 +1,2 @@
 MealPlanner - Planificator de mese cu rețete și liste de cumpărături 
+Nume : BiteWise
