@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BiteWise — Planificator de mese</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥗</text></svg>">
+</head>
+<body>
+<div class="app">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="brand">
+            <div class="brand-mark">🥗</div>
+            <div>
+                <div class="brand-name">BiteWise</div>
+                <div class="brand-sub">Meal Planner</div>
+            </div>
+        </div>
+
+        <button class="nav-item active" data-page="dashboard"><span class="ico">📊</span> Panou</button>
+        <button class="nav-item" data-page="profile"><span class="ico">👤</span> Profil</button>
+        <button class="nav-item" data-page="weight"><span class="ico">⚖️</span> Greutate</button>
+        <button class="nav-item" data-page="goals"><span class="ico">🎯</span> Obiective</button>
+        <button class="nav-item" data-page="journal"><span class="ico">📓</span> Jurnal</button>
+        <button class="nav-item" data-page="pantry"><span class="ico">🧺</span> Cămară</button>
+        <button class="nav-item" data-page="recipes"><span class="ico">🍳</span> Rețete</button>
+        <button class="nav-item" data-page="ingredients"><span class="ico">🥕</span> Ingrediente</button>
+
+        <div class="nav-spacer"></div>
+        <div class="nav-foot">
+            <span class="dot">●</span> Rulează local · 127.0.0.1<br>
+            Date demo · H2 in-memory
+        </div>
+    </aside>
+
+    <!-- Main content -->
+    <main class="main" id="content">
+        <div class="empty"><div class="big">🥗</div>Se încarcă…</div>
+    </main>
+</div>
+
+<!-- Modal generic -->
+<div class="modal-backdrop" id="modalBackdrop">
+    <div class="modal" id="modalBox"></div>
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast"></div>
+
+<script src="/js/api.js"></script>
+<script src="/js/app.js"></script>
+<script src="/js/pages.js"></script>
+<script src="/js/pages2.js"></script>
+</body>
+</html>
